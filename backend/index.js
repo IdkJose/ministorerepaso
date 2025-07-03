@@ -1,10 +1,9 @@
 import express from 'express';
-import { getProductos } from './controller/productosController.js';
-import { get } from 'mongoose';
+import productosRoutes from './routes/productos.js';
 
 const app = express();
 
-app.get("/", getProductos);
+app.use("/productos", productosRoutes);
 
 app.listen(3000, () => {
     console.log("La aplicación esta escuchando en el puerto 3000");
