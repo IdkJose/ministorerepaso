@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node backend/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "mongoose": "^8.16.1"
   },
   "devDependencies": {
+    "supertest": "^7.1.1",
     "vitest": "^3.2.4"
   }
 }
